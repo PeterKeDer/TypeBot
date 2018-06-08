@@ -23,8 +23,8 @@ config = {
     'run_headless': False,
     'should_login': False,
     'login_credentials': {
-        'username': 'helloworld420',
-        'password': '12345678'
+        'username': 'your_username',
+        'password': 'your_password'
     },
     'wpm': 200,
     'start_delay': 0,
