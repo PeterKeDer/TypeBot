@@ -26,7 +26,7 @@ config = {
         'username': 'your_username',
         'password': 'your_password'
     },
-    'wpm': 200,
+    'wpm': 150,
     'start_delay': 0,
     'load_timeout': 1,
     'save_screenshot': False

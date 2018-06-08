@@ -94,16 +94,13 @@ class TypeBot:
         # parse text
         if len(elems) == 1:
             return elems[0].text
-        if len(elems) > 2:
-            if elems[0].get_attribute('class').split(' ')[0] == elems[1].get_attribute('class'):
-                return elems[0].text + elems[1].text + ' ' + elems[2].text
-        text = ''
         # default method when not matching any special cases
+        text = ''
         for i in range(len(elems)):
             if i == len(elems)-1:
                 text += ' '  # before the last elem, there is a space in between
             text += elems[i].text
-        return text
+        return text.replace(' ,', ',')
 
     # Login, if given the credentials
     def login(self, credentials):
